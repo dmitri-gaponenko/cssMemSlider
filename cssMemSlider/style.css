@@ -1,0 +1,7 @@
+img {
+  width: 400px;
+}
+
+input[type="radio"] {
+  visibility: hidden;
+}

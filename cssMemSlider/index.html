@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Mem Slider</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+  <div class="container">
+    <input type="radio" id="meme1" name="memes" checked>
+    <input type="radio" id="meme2" name="memes">
+    <input type="radio" id="meme3" name="memes">
+    <input type="radio" id="meme4" name="memes">
+    <div class="slider">
+      <div class="meme-image" id="meme-image-1">
+        <img src="https://www.adobe.com/express/create/media_1c2db720fa69cff425a96b2459b2621888f77a9c7.jpeg">
+      </div>
+      <div class="meme-image" id="meme-image-2">
+        <img src="https://www.adobe.com/express/create/media_1c2db720fa69cff425a96b2459b2621888f77a9c7.jpeg">
+      </div>
+      <div class="meme-image" id="meme-image-3">
+        <img src="https://www.adobe.com/express/create/media_1c2db720fa69cff425a96b2459b2621888f77a9c7.jpeg">
+      </div>
+      <div class="meme-image" id="meme-image-4">
+        <img src="https://www.adobe.com/express/create/media_1c2db720fa69cff425a96b2459b2621888f77a9c7.jpeg">
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="descriptions">
+        <div class="desc desc-1">Meme 1</div>
+        <div class="desc desc-2">Meme 2</div>
+        <div class="desc desc-3">Meme 3</div>
+        <div class="desc desc-4">Meme 4</div>
+      </div>
+      <div id="controls">
+        <label for="meme1" class="control" id="control1"></label>
+        <label for="meme2" class="control" id="control2"></label>
+        <label for="meme3" class="control" id="control3"></label>
+        <label for="meme4" class="control" id="control4"></label>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
