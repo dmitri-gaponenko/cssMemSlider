@@ -51,6 +51,21 @@ body {
   background-repeat: no-repeat;
 }
 
+.desc {
+  position: absolute;
+  z-index: -1;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px 0;
+  background: darkgray;
+}
+
 #controls {
   text-align: center;
 }
@@ -76,7 +91,15 @@ body {
 #meme3:checked ~ .slider #meme-image-3,
 #meme4:checked ~ .slider #meme-image-4 {
   z-index: 1;
-  animation: scroll 0.5s ease;
+  animation: slide 0.5s ease;
+}
+
+#meme1:checked ~ .navigation .descriptions .desc-1,
+#meme2:checked ~ .navigation .descriptions .desc-2,
+#meme3:checked ~ .navigation .descriptions .desc-3,
+#meme4:checked ~ .navigation .descriptions .desc-4 {
+  z-index: 1;
+  animation: slide 1s ease;
 }
 
 #meme1:checked ~ .navigation #controls #control1,
@@ -86,7 +109,7 @@ body {
   background-color: #ffffff;
 }
 
-@keyframes scroll {
+@keyframes slide {
   from { opacity: 0.3; }
   to { opacity: 1; }
 }
