@@ -127,3 +127,13 @@ body {
   cursor: pointer;
   transition: 0.5s;
 }
+
+@media (max-width: 767px) {
+  .navigation {
+    align-items: stretch;
+    flex-direction: column-reverse;
+  }
+  .controls {
+    margin: 0 auto;
+  }
+}
