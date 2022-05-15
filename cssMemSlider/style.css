@@ -17,17 +17,17 @@ body {
 .container {
   max-width: 37rem;
   margin: 0 auto;
-  border: solid 0.5rem #000000;
 }
 
 .slider-wrapper {
   overflow-x: hidden;
+  border: solid 0.5rem #000000;
 }
 
 .slider {
   display: flex;
   flex-direction: row;
-  transition: 0.5s;
+  transition: 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 .meme-image {
@@ -42,8 +42,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 0.3rem;
-  transition: 0.5s;
+  transition: 0.5s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .desc {
@@ -56,6 +55,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem 0;
 }
 
 .controls {
@@ -135,5 +135,11 @@ body {
   }
   .controls {
     margin: 0 auto;
+  }
+  .container {
+    max-width: 34rem;
+  }
+  .descriptions {
+    padding-top: 0.5rem;
   }
 }
