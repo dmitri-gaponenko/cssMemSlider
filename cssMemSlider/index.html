@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Mem Slider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <input type="radio" id="meme1" name="memes" checked>
+    <input type="radio" id="meme2" name="memes">
+    <input type="radio" id="meme3" name="memes">
+    <input type="radio" id="meme4" name="memes">
+    <div class="slider-wrapper">
+      <div class="slider">
+        <img src="./images/meme1.jpeg" class="meme-image" id="meme-image-1">
+        <img src="./images/meme2.jpeg" class="meme-image" id="meme-image-2">
+        <img src="./images/meme3.jpeg" class="meme-image" id="meme-image-3">
+        <img src="./images/meme4.jpeg" class="meme-image" id="meme-image-4">
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="descriptions-wrapper">
+        <div class="descriptions">
+          <div class="desc desc-1">Почему я не смог засабмитить таск вовремя</div>
+          <div class="desc desc-2">Человек, который потратил все мои деньги</div>
+          <div class="desc desc-3">Интроверт на вечеринке</div>
+          <div class="desc desc-4">Почему у меня так сильно болит спина?</div>
+        </div>
+      </div>
+      <div class="controls">
+        <label for="meme1" class="control" id="control1">
+          <span class="control-span"></span>
+        </label>
+        <label for="meme2" class="control" id="control2">
+          <span class="control-span"></span>
+        </label>
+        <label for="meme3" class="control" id="control3">
+          <span class="control-span"></span>
+        </label>
+        <label for="meme4" class="control" id="control4">
+          <span class="control-span"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
